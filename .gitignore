@@ -1,0 +1,8 @@
+src/Debug/*
+src/Release/*
+src/ipch/*
+src/Game2D/Debug/*
+src/Game2D/Release/*
+*.sdf
+*.exe
+*.ipch
