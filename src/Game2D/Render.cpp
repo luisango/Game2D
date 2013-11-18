@@ -3,6 +3,13 @@
 
 Render::Render()
 {
+	m_sBlankLine = "";
+
+	for (int w = 0; w < CFG_MAX_WIDTH; w++)
+    {
+		m_sBlankLine += CFG_CLEAR_CHARACTER;
+    }
+
     HideCursor();
 }
 
@@ -12,12 +19,7 @@ void Render::ClearScreen()
 
     for (int h = 0; h < CFG_MAX_HEIGHT; h++)
     {
-        for (int w = 0; w < CFG_MAX_WIDTH; w++)
-        {
-	        printf("%c", CFG_CLEAR_CHARACTER);
-        }
-
-        printf("\n");
+        printf("%s", m_sBlankLine);
     }
 }
 

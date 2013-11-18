@@ -9,6 +9,9 @@
 
 class Render
 {
+private:
+	String m_sBlankLine;
+
 public:
     Render();
 
