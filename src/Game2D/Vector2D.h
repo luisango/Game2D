@@ -1,6 +1,7 @@
 #ifndef __VECTOR2D_H__
 #define __VECTOR2D_H__
 
+#include "stdafx.h"
 #include <cmath>
 
 class Vector2D

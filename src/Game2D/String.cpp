@@ -302,7 +302,7 @@ String String::Replace(const String& find, const String& rep) const{
         // Esta var guia el indice de sustituci�n
         int aparicion_index = 0;
         int aparicion_now = 0;
-        unsigned int x, pos=0;
+        int x, pos=0;
         char * aux;
 
         // Calculamos el nevo tama�o de la cadena

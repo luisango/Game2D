@@ -26,15 +26,15 @@ void Entity::MoveRight() { }
 
 Vector2D Entity::GetPosition()
 {
-    m_vPosition;
+    return m_vPosition;
 }
 
-int Entity::GetX()
+float Entity::GetX()
 {
-    m_vPosition.x;
+    return m_vPosition.x;
 }
 
-int Entity::GetY()
+float Entity::GetY()
 {
-    m_vPosition.y;
+    return m_vPosition.y;
 }

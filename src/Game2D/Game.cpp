@@ -54,6 +54,8 @@ void Game::Update()
 
 void Game::Draw()
 {
+    m_pRender->ClearScreen();
+
     switch (m_eState)
     {
     case Game::GameState::INIT:

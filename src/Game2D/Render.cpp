@@ -1,11 +1,24 @@
 #include "stdafx.h"
 #include "Render.h"
 
-Render::Render() { }
+Render::Render()
+{
+    HideCursor();
+}
 
 void Render::ClearScreen()
 {
-	printf("%c", CFG_CLEAR_CHARACTER);
+    GoToXY(0, 0);
+
+    for (int h = 0; h < CFG_MAX_HEIGHT; h++)
+    {
+        for (int w = 0; w < CFG_MAX_WIDTH; w++)
+        {
+	        printf("%c", CFG_CLEAR_CHARACTER);
+        }
+
+        printf("\n");
+    }
 }
 
 void Render::GoToXY(int x, int y)

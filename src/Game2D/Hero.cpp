@@ -3,7 +3,7 @@
 
 Hero::Hero()
 {
-
+    m_cAvatar = '*';
 }
 
 void Hero::Update()
@@ -11,16 +11,21 @@ void Hero::Update()
 
 }
 
+void Hero::Move(Vector2D v)
+{
+    Entity::Move(v);
+}
+
 void Hero::MoveUp()
 {
-    Vector2D movement(0, 1);
+    Vector2D movement(0, -1);
 
     Move(movement);
 }
 
 void Hero::MoveDown()
 {
-    Vector2D movement(0, -1);
+    Vector2D movement(0, 1);
 
     Move(movement);
 }

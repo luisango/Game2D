@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "Config.h"
-#include "Vector2D.h"s
+#include "Vector2D.h"
 
 class Entity 
 {
@@ -24,8 +24,8 @@ public:
     virtual void MoveLeft();
     virtual void MoveRight();
     Vector2D GetPosition();
-    int GetX();
-    int GetY();
+    float GetX();
+    float GetY();
 };
 
 #endif
